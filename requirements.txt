@@ -1,0 +1,14 @@
+# Core numerical/data dependencies
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+joblib>=1.3
+tqdm>=4.66
+
+# Neural network inference
+# CPU is fine. On low-storage systems, install with:
+# pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+
+# Some parser/training scripts may import xgboost even if the MLP inference path does not use it directly.
+xgboost>=2.0
